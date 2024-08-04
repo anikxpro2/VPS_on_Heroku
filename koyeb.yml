@@ -1,9 +1,28 @@
-name: vps-on-koyeb
+name: vps-on-heroku
 regions:
   - fra
 instance_type: micro
 
 services:
   - name: vps-service
-    dockerfile_path: ./Dockerfile
+    build:
+      docker:
+        web: Dockerfile
     port: 80
+    env:
+      - name: DEBIAN_FRONTEND
+        value: noninteractive
+      - name: SCREEN_WIDTH
+        value: 1280
+      - name: SCREEN_HEIGHT
+        value: 720
+      - name: SCREEN_DEPTH
+        value: 24
+      - name: SCREEN_DPI
+        value: 96
+      - name: DISPLAY
+        value: :99
+      - name: DISPLAY_NUM
+        value: 99
+      - name: UI_COMMAND
+        value: /usr/bin/startxfce4
