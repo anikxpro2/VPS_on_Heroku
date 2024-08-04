@@ -5,7 +5,5 @@ instance_type: micro
 
 services:
   - name: vps-service
-    build:
-      docker:
-        web: Dockerfile
+    dockerfile_path: ./Dockerfile
     port: 80
