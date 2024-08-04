@@ -1,3 +1,11 @@
-build:
-  docker:
-    web: Dockerfile
+name: vps-on-koyeb
+regions:
+  - fra
+instance_type: micro
+
+services:
+  - name: vps-service
+    build:
+      docker:
+        web: Dockerfile
+    port: 80
