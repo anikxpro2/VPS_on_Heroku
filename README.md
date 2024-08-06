@@ -2,4 +2,4 @@
 so this is another file for heroku vps and its kinda same as pervious one
 
 here is the link to make ur vps
-https://dashboard.heroku.com/new?template=https://github.com/anikxpro2/VPS_on_Heroku?tab=readme-ov-file
+https://dashboard.heroku.com/new?template=https://github.com/anikxpro2/VPS_on_Heroku
